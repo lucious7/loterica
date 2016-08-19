@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+SplashScreen-Image: resource/img/splashscreen.png
+Main-Class: br.com.lucious.loterica.App
+

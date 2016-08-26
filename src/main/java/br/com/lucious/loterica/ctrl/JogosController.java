@@ -61,7 +61,7 @@ public class JogosController {
 	}
 
 	public void gerarPDF(Grupo grupo) {
-		PdfCreator.createComJogos(grupo, listarJogos(grupo));
+		PdfCreator.create(grupo, listarJogos(grupo));
 		try {
 			Desktop.getDesktop().open(new File(PdfCreator.filename(grupo)));
 		} catch (IOException e) {

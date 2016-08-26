@@ -71,7 +71,8 @@ public class LotericaDao {
 		try {
 			PreparedStatement listaQuery = ConnectionManager.getConnection().prepareStatement(
 					"SELECT id, grupo_id, nome_jogador, dezena01, dezena02, dezena03, dezena04, dezena05, "
-							+ "dezena06, dezena07, dezena08, dezena09, dezena10 FROM JOGO WHERE grupo_id = ?");
+							+ "dezena06, dezena07, dezena08, dezena09, dezena10 FROM JOGO WHERE grupo_id = ? "
+							+ "ORDER BY nome_jogador");
 
 			listaQuery.setInt(1, grupoId);
 			listaQuery.execute();

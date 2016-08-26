@@ -3,6 +3,8 @@ package br.com.lucious.loterica.model;
 import java.util.Vector;
 
 public class Jogo {
+	
+	public static final Integer PRECO_JOGO = 24;
 
 	private Integer id;
 	private Grupo grupo;

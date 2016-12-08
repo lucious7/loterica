@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import br.com.lucious.loterica.db.ConnectionManager;
 import br.com.lucious.loterica.db.DbUtil;
 import br.com.lucious.loterica.view.MainView;
+import br.com.lucious.loterica.view.SplashScreen;
 
 /**
  * 
@@ -16,10 +17,13 @@ import br.com.lucious.loterica.view.MainView;
 public class App {
 
 	public static void main(String[] args) {
+		SplashScreen spScreen = new SplashScreen();
+		
 		MainView view = new MainView();
 		view.setVisible(true);
 		view.addWindowListener(getWindowListener());
-
+		
+		spScreen.close();
 	}
 
 	private static WindowListener getWindowListener() {
